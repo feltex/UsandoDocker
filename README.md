@@ -7,7 +7,9 @@ Assista também nossos vídeos no youtube [Canal no youtube](https://www.youtube
 
 Projeto com os comandos mais immportantes sobre Docker.
 
-Teremos vários examplos de utilização do Docker
+![feltex.com.br](index.png "www.feltex.com.br")
+
+Aprenda com vários exemplos de utilização do Docker.
 
 * Nginx
 * MySQL
