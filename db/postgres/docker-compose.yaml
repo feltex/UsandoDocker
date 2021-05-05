@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    container_name: postgres_container
+    image: postgres:13.2
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: feltex
+      POSTGRES_DB: dbfeltex
+      PGDATA: /data/postgres
+    ports:
+      - "5432:5432"
+    restart: always
+  pgadmin:
+    container_name: pgadmin_container
+    image: dpage/pgadmin4:5
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    ports:
+      - "5050:80"
